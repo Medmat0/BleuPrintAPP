@@ -6,7 +6,7 @@
     region: frankfurt
     plan: free
     buildCommand: npm install 
-    startbuild: npm start
+    startCommand: npm start
     envVars:
       - key: DBfirstBlue_URL
         fromDatabase:

@@ -1,0 +1,11 @@
+  Services : 
+   type: Blueprint
+   name: FirstBluePrint
+   runtime: node.js
+   repo : https://github.com/Medmat0/BleuPrintAPP
+   region: frankfurt
+   plan: free
+   rootdir: dist
+   buildCommand: npm install ; npm build
+   startbuild: npm start
+   

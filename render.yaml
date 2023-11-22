@@ -1,10 +1,21 @@
   services: 
-   type: Blueprint
-   name: FirstBluePrint
-   runtime: node.js
-   repo : https://github.com/Medmat0/BleuPrintAPP
-   region: frankfurt
-   plan: free
-   rootdir: dist
-   buildCommand: npm install ; npm build
-   startbuild: npm start
+  - name: FirstBluePrint
+    type: Blueprint
+    runtime: node
+    repo : https://github.com/Medmat0/BleuPrintAPP
+    region: frankfurt
+    plan: free
+    buildCommand: npm install 
+    startbuild: npm start
+    envVars:
+      - key: DBfirstBlue_URL
+        fromDatabase:
+            name: FirstBluePrintDB
+            property: connectionString
+
+databases:
+   - name: FirstBluePrintDB
+     databaseName: DBfirstBlue
+     region: frankfurt
+     plan: free
+

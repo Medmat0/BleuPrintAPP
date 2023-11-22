@@ -1,6 +1,6 @@
   services: 
   - name: FirstBluePrint
-    type: Blueprint
+    type: web
     runtime: node
     repo : https://github.com/Medmat0/BleuPrintAPP
     region: frankfurt

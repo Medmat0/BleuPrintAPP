@@ -1,4 +1,4 @@
-  Services: 
+  services: 
    type: Blueprint
    name: FirstBluePrint
    runtime: node.js
